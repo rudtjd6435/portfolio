@@ -10,20 +10,31 @@
   <link rel="stylesheet" href="./common/minireset.min.css" />
   <!-- font -->
   <link rel="stylesheet" href="./common/fonts.css" />
-  <!-- style css -->
+  <!-- style css -->    
   <link rel="stylesheet" href="./index.css" />
   <!-- script -->
   <script defer src="./index.js"></script>
   <link rel="stylesheet" href="./common/minireset.min.css" />
    <!-- Link Swiper's CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-   <link rel="stylesheet" href="./animation.css">
+
+     <!-- open graph -->
+     <meta property="og:title" content="경성 포트폴리오" />
+     <meta
+       property="og:url"
+       content="https://rudtjd6435.github.io/portfolio/" />
+     <meta property="og:image" content="./images/openGraph/openGraph.png" />
+     <meta property="og:description" content="최적의 솔루션을 제공합니다." />
+     <meta property="og:type" content="website" />
  
+     <!-- favicon -->
+     <link rel="icon" type="image/png" sizes=""  href="./images/favicon_io/starr.png">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
-  <header>
+  <header id="header" class="deactive">
     <div class="gnb_wrapper">
       <div class="header_container">
         <!-- 대메뉴 -->
@@ -42,12 +53,18 @@
 
 
 
-
   <!-- professionals_main -->
   <div class="professionals_container">
-    <div class="header_cover">
-        <video src="./images/sampleV.mp4" muted autoplay loop id="myVideo">
-          <article>가나다라마바사아자차카타파하</article>
+    <div class="header_cover">  
+          <article>
+            <div class="article_wrapper">
+              <p>DON'T JUST CHASE YOUR DREAM,<br>CATCH THEM.
+              <br>
+                <span>노력하는 개발자, 김경성</span>
+              </p>
+            </div>
+          </article>
+          <video src="./images/Person Typing Fast.mp4" muted autoplay loop id="myVideo">
         </video>
     </div>
     </div>
@@ -77,52 +94,70 @@
       <main>
        <!-- .box1 -->
       <section class="box1">     
-        <h2 id="title1">프리미엄 셀프 스토리지<br>스토르가 새로운 기준을<br>제시합니다.</h2>
+        <h2 id="title1">꾸준한 노력으로 성장해나가고<br>싶은 개발자 김경성의 프로젝트를<br>소개합니다.</h2>
       </section>
       <!-- .box2-->
       <section class="box2">
         <div class="box2_wrapper">
         
-        <h3>ㅇㄴㄹㄴㄹㄴㄹ</h3>
-        <p>sfasdfsafsafsfaf</p>
-    
+        <h3>KYEONGSEONG,<br>PORTFOLIO</h3>
+       
         </div>
       </section>
       <!-- .box3-->
       <section class="box3">
        <img src="./images/black_circle.png" alt="">
-        <p><strong>PROJECT소개</strong><br>프리미엄 셀프 스토리지, 스토르를 소개합니다.</p>
+        <p><strong>PROJECT소개</strong><br>프로젝트를 소개합니다.</p>
       </section>
       <!-- .box4 -->
       <section class="box4">
-        <h3>스토르와 함꼐 <br> 새로운 라이프 스타일을 <br> 경헙하세요.</h3>
+        <h3>포트폴리오를 <br> 확인하세요.</h3>
       </section>
       <!-- .box5-->
-     <a href="#">
+    
         <section class="box5">
+          <a href="">
         <img src="./images/orange.png" alt="">
-        <h3>web1</h3>
+        <h3>PROJECT1</h3>
+        <h4>~를 활용한 ~소개</h4>
+        <p>more details</p>
+      </a>
       </section>
-    </a>
+  
       <!-- .box6-->
+    
       <section class="box6">
+        <a href="">
         <img src="./images/dia.png" alt="">
-        <h3>web2</h3>
-        <p>무엇인지 이제 릴케 이웃 계집애들의 사람들의 내일 까닭입니다. 언덕 하나 나는 써 새워 까닭</p>
+        <h3>PROJECT2</h3>
+        <h4>~를 활용한 ~소개</h4>
+        <p>more details</p>
+      </a>
       </section>
+    
       <!-- .box7 bg -->
+     
       <section class="box7">
         <img src="./images/starr.png" alt="">
-        <h3>PROJECT를 소개합니다.</h3>
+        <h3>PROJECT를 소개합니다 →</h3>
       </section>
       <section class="box8">
+        <a href="#">
         <img src="./images/pink.png" alt="">
-        <h3>PROJECT2</h3>
+        <h3>PROJECT3</h3>
+        <h4>~를 활용한 ~소개</h4>
+        <p>more details</p>
+        </a>
       </section>
       <section class="box9">
+        <a href="#">
         <img src="./images/blue.png" alt="">
-        <h3>PROJECT3</h3>
+        <h3>PROJECT4</h3>
+        <h4>~를 활용한 ~소개</h4>
+        <p>more details</p>
+        </a>
       </section>
+      </main>
       </main>
     <!----------------------------------------------------------------->
     <div class="green"><img src="./images/green.png" alt=""></div>
@@ -131,18 +166,32 @@
         <h1 id="title2">SKILLS</h1>
         <div class="item1_btn_cover">
         <div class="item1_btn">
-          <p class="btn_style" id="btn1" data-bg="orange">JAVASCRIPT</p>
-          <p class="btn_style" id="btn2" data-bg="tomato">REACT</p>
-          <p class="btn_style" id="btn3" data-bg="lightskyblue">HTML</p>
-          <p class="btn_style" id="btn4" data-bg="purple">CSS</p>
+          <p class="btn_style" id="btn1" data-bg="orange">HTML,CSS</p>
+          <p class="btn_style" id="btn2" data-bg="tomato">JAVASCRIPT</p>
+          <p class="btn_style" id="btn3" data-bg="lightskyblue">REACT</p>
+          <p class="btn_style" id="btn4" data-bg="purple">기타</p>
         </div>
       
-
+        
        <article class="item1_introduce">
-        <p class="txt1">위하여 많이 얼음에 않는 할지니, 불어 있다. 인생에 같지 우리의 꽃이 시들어 따뜻한 소담스러운 평화스러운 붙잡아 위하여서. 간에 구하기 싶이 넣는 인간은 내려온 듣기만 구하지 못하다 이것이다. 품으며, 있을 못하다 원질이 무한한 청춘은 심장은 풀이 이것이다. 낙원을 그들의 간에 그러므로 넣는 이상이 것이다. 꾸며 수 시들어 이것은 풀밭에 봄바람이다. </p>
-        <p class="txt2">불어 있다. 인생에 같지 우리의 꽃이 시들어 따뜻한 소담스러운 평화스러운 붙잡아 위하여서. 간에 구하기 싶이 넣는 인간은 내려온 듣기만 구하지 못하다 이것이다. 품으며, 있을 못하다 원질이 무한한 청춘은 심장은 풀이 이것이다. 낙원을 그들의 간에 그러므로 넣는 이상이 것이다. 꾸며 수 시들어 이것은 풀밭에 봄바람이다. </p>
-        <p class="txt3">간에 구하기 싶이 넣는 인간은 내려온 듣기만 구하지 못하다 이것이다. 품으며, 있을 못하다 원질이 무한한 청춘은 심장은 풀이 이것이다. 낙원을 그들의 간에 그러므로 넣는 이상이 것이다. 꾸며 수 시들어 이것은 풀밭에 봄바람이다. </p>
-        <p class="txt4">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
+        <p class="txt1">- 웹 사이트 구축 및 디자인<br>
+          - 웹표준 & 웹접근성을 고려하여 시맨틱 태그 적극 활용<br>
+          - flex, grid, position 사용<br>
+          - 스타일 적용, 애니메이션 구현<br>
+          - 미디어쿼리 이용 반응형 웹 제작 </p>
+        <p class="txt2">
+          -웹 사이트 구현<br>
+          -자바스크립트 기본문법 이해<br>
+          -이벤트, 애니메이션 구현<br>
+        </p>
+        <p class="txt3">-함수 컴포넌트 사용<br>
+          -styled components를 이용한 스타일 구성<br>
+          -Router, useState 사용<br>
+          -발전을 위해 공부중..</p>
+        <p class="txt4">
+          -github를 이용한 배포<br>
+          -Git Bash, VScode 사용<br>
+        </p>
        </article>
       </div><!--introduce_btn_cover-->
       
@@ -153,7 +202,21 @@
         <h1>ABOUT</h1>  
   
         <article class="item2_introduce">
-          <p class="text_introduce">위하여 많이 얼음에 않는 할지니, 불어 있다. 인생에 같지 우리의 꽃이 시들어 따뜻한 소담스러운 평화스러운 붙잡아 위하여서. 간에 구하기 싶이 넣는 인간은 내려온 듣기만 구하지 못하다 이것이다. 품으며, 있을 못하다 원질이 무한한 청춘은 심장은 풀이 이것이다. 낙원을 그들의 간에 그러므로 넣는 이상이 것이다. 꾸며 수 시들어 이것은 풀밭에 봄바람이다. 간에 구하기 싶이 넣는 인간은 내려온 듣기만 구하지 못하다 이것이다. 품으며, 있을 못하다 원질이 무한한 청춘은 심장은 풀이 이것이다. 낙원을 그들의 간에 그러므로 넣는 이상이 것이다. 꾸며 수 시들어 이것은 풀밭에 봄바람이다. 간에 구하기 싶이 넣는 인간은 내려온 듣기만 구하지 못하다 이것이다. 품으며, 있을 못하다 원질이 무한한 청춘은 심장은 풀이 이것이다. 낙원을 그들의 간에 그러므로 넣는 이상이 것이다. 꾸며 수 시들어 이것은 풀밭에 봄바람이다. </p>
+          <p class="text_introduce">
+    
+             맡은 일에 책임을 다하고<br>
+            최선을 다해 행동하려고 노력합니다.<br>
+            <br><br>
+            쉽게 포기하지 않고<br>
+            여러 해결책을 찾으며 해결해나갑니다.<br>
+            <br><br>
+             꾸준한 노력으로 스스로를<br>
+            계속해서 성장시킵니다.<br>
+            <br><br>
+             도전을 두려워하지않고 <br>
+            새로운 시도를 통해 발전합니다.<br>
+            <br><br>
+           </p>
           </article>
       </section>
     </nav>
@@ -183,10 +246,15 @@
   <p>Email:rudtjd6435@naver.com</p>
 </section>
 
+
 <section class="github">
+  <a href="#">
   <h3>GitHub</h3>
-  <p>깃허브 바로가기</p>
+ <img src="./images/github-icon.jpg" alt="">
+  <p>깃허브 바로가기 →</p>
+</a> 
 </section>
+
 
     </body>
     </html>
