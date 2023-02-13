@@ -16,8 +16,15 @@ body {
     Verdana, Geneva, sans-serif, Apple Gothic, AppleGothic;
   color: #1c1c1c;
 }
-body.no_scroll {
-  overflow: hidden;
+
+body::-webkit-scrollbar {
+  width:10px;
+}
+body::-webkit-scrollbar-track {
+  background-color:none ;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #062fff;
 }
 
 img {
@@ -46,23 +53,7 @@ header {
   height: 100px;
   z-index:100;
 }
-.active{
-  background-color: #FFE900;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-  z-index: 999999;
-  -webkit-transition-duration:0.4s;
-  -webkit-transition-timing-function:ease;
-}
-.deactive{
-  
-  background-color:transparent;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-  z-index: 299900;
-  -webkit-transition-duration:0.4s;
-  -webkit-transition-timing-function:ease;
-}
+
 header .gnb_wrapper {
   /* flex-container */
   display: flex;
@@ -98,8 +89,9 @@ header .header_container #list {
   display: flex;
   align-items: center;
   gap: 100px;
-  color: #EB3192;
-  font-weight: 600;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 /* 각각의 대메뉴 제목 */
@@ -128,22 +120,22 @@ header .header_container #list > li > a {
 }
 .professionals_container article{
   position: relative;
-  z-index: 9999;
+  z-index: 99;
 }
   
 .professionals_container  p{
 position: absolute;
 font-size: 50px;
-color: #062fff;
+color: #fff;
 z-index: 999;
 text-align: center;
 left: 25vw;
-top:20vw;
+top:23vw;
 font-weight: bold;
 }
 .professionals_container span{
   font-size: 40px;
-  color: #FE912D;
+  color: #fff;
 }
 
 .professionals_container .header_cover video{

@@ -1,0 +1,229 @@
+/* 상단 헤더 */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index:100;
+}
+
+header .gnb_wrapper {
+  /* flex-container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 99;
+  height: 100px;
+  position: fixed;
+  /* background-color: #fff; */
+  color: white;
+}
+
+
+
+/* 로고 */
+header h1 {
+  /* flex-item */
+  margin-right: auto; /* 플렉스 아이템 개별 정렬 */
+  margin-left: 40px;
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+}
+
+header .header_container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+header .header_container #list {
+  /* flex-item / flex-container*/
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  color: #EB3192;
+  font-weight: 700;
+  font-size: 20px;
+  list-style: none;
+  
+}
+
+/* 각각의 대메뉴 제목 */
+header .header_container #list > li > a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #062fff;
+  z-index: 9999999999;
+}
+
+
+
+
+
+
+#cursorFollower {
+  width: 20px;
+  height: 20px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+body {
+  font-family: 'NotoSansCJKkr', 'Malgun Gothic', '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Tahoma,
+    Verdana, Geneva, sans-serif, Apple Gothic, AppleGothic;
+  color: #1c1c1c;
+}
+body { cursor:none; }
+body::-webkit-scrollbar {
+  width:10px;
+}
+body::-webkit-scrollbar-track {
+  background-color:none ;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #062fff;
+}
+/********************************************************************************/
+.scroll_cover{
+margin-top: 200px;
+}
+.scroll{
+  margin-top: 200px;
+  overflow: auto;
+  padding: 0;
+  text-align: center;
+  margin: auto;
+  height: 400px;
+  width: 70%;
+  border: #1c1c1c solid 10px;
+}
+.scroll img{
+  width: 100%;
+}
+/**********************************************************************************/
+main{
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 150px;
+}
+h2{
+  text-indent: 30px;
+}
+main .overview_next{
+  background-color: #fafafa;
+  margin-bottom: 90px;
+  padding: 20px;
+}
+main .overview_next p{
+  text-indent: 30px;
+  line-height: 13px;
+}
+.design_wrapper{
+  margin-left: 60px;
+
+}
+
+main h1{
+  padding-right: 50px;
+  font-size: 30px;
+  margin: 0;
+
+}
+main .design_next{
+  background-color: #fafafa;
+  margin-bottom: 90px;
+}
+main .design_next .design_wrapper{
+  margin-bottom: 40px;
+}
+main .design_next .design_wrapper p{
+  line-height: 13px;
+}
+main .palette{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .palette .color1{
+  background-color: #2ABFBA;
+  height: 100px; width: 100px; z-index: 999; border-radius: 50%; 
+  margin-bottom: 10px;
+  margin-left: 60px;
+ 
+}
+main .palette .color2{
+  background-color: #85C440;
+  height: 100px; width: 100px; z-index: 999; border-radius: 50%;
+  margin-left: 60px;
+}
+main .palette .color3{
+  background-color: #FE912D;
+  height: 100px; width: 100px; z-index: 999; border-radius: 50%;
+  margin-left: 60px;
+}
+main .palette .color4{
+  background-color: #3D58A7;
+  height: 100px; width: 100px; z-index: 999; border-radius: 50%;
+  margin-left: 60px;
+}
+main .palette .color5{
+  background-color: #FFE900;
+  height: 100px; width: 100px; z-index: 999; border-radius: 50%;
+  margin-left: 60px;
+}
+main .palette .color6{
+  background-color: #EB3192;
+  height: 100px; width: 100px; z-index: 999; border-radius: 50%;
+  margin-bottom: 40px;
+  margin-left: 60px;
+}
+main .typography .first{
+  font-weight: 100;
+}
+main .typography .second{
+  font-weight: 500;
+}
+main .typography .third{
+  font-weight: 900;
+}
+main .problem_next{
+  background-color: #fafafa;
+  margin-bottom: 90px;
+}
+main .problem_next h3{
+  text-indent: 30px;
+}
+main .problem_next p{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+main .review_next .first{
+  text-indent: 10px;
+}
+
+main .review_next{
+  background-color: #fafafa;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.before{
+  position: relative;
+  padding: 30px;
+}
+.before a{
+  position: absolute;
+  right: 30px;
+  bottom:30px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #EB3192;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- style css -->    
+ <link rel="stylesheet" href="./project1.css" />
+ <link rel="stylesheet" href="./project1.js" />
+ <link rel="stylesheet" href="../common/fonts.css" />
+ <link rel="icon" type="image/png" sizes=""  href="../images/favicon_io/starr.png">
+  <title>project1</title>
+</head>
+<body>
+
+  <header id="header">
+    <div class="gnb_wrapper">
+      <div class="header_container">
+        <!-- 대메뉴 -->
+        <ul id="list">
+          <li><a href="../index.html#title1">PROJECT</a></li>
+          <li><a href="../index.html#title2">ABOUT</a></li>
+          <li><a href="../index.html#title3">SKILLS</a></li>
+          <li><a href="../index.html#title4">CONTACT</a></li>
+        </ul>
+
+        <!-- 상단 헤더 언어선택 메뉴 -->
+
+      </div>
+    </div>  
+  </header>
+
+  <div id="cursorFollower"></div>
+
+  <script>
+const cursorFollower = document.getElementById("cursorFollower");
+
+document.onmousemove = (e) => {
+    cursorFollower.style.left = e.pageX + "px";
+    cursorFollower.style.top = e.pageY + "px";
+}
+
+  </script>
+  <div class="scroll_cover">
+  <div class="scroll"><img src="./images/project1.png" alt=""></div>
+  </div>
+
+  <main>
+
+
+  
+  <section class="overview">
+  <h1>overview</h1>
+  </section>
+
+  <section class="overview_next">
+  <p>JavaScript를 이용한 스크롤시 헤더 색상 변화 효과를 사용했습니다.</p>
+  <p>JavaScript를 이용한 swiper, 클릭이벤트를 구현하였습니다.</p>
+  </section>
+
+  <section class="design">
+    <h1>Design</h1>
+  </section>
+  <section class="design_next">
+    <h2>Concept</h2>
+    <div class="design_wrapper">
+    <p>Grid를 사용한 사각형의 배경에 다각형 디자인의 도형들을 배치한 형태로 구성했습니다.</p>
+    <p>구성 요소마다 여러가지 색상을 사용해 다채로운 느낌을 주려고 하였습니다.</p>
+    </div>
+    </div>
+
+    <h2>Color Palette</h2>
+    <div class="palette">
+      
+      <article class="color1"></article>
+      <article class="color2"></article>
+      <article class="color3"></article>
+      <article class="color4"></article>
+      <article class="color5"></article>
+      <article class="color6"></article>
+   
+    </div>
+  
+    <h2>Typography</h2>
+      <div class="typography">
+        <div class="design_wrapper">
+          <p class="first">NotoSansKR</p>
+          <p class="second">NotoSansKR</p>
+          <p class="third">NotoSansKR</p>
+        </div>
+      </div>
+  
+    </section>
+
+    <section class="problem">
+      <h1>Problem & Solution</h1>
+    </section>
+    <section class="problem_next">
+      <h3>JavaScript를 이용한 스크롤시 헤더 색상 변경의 어려움.</h3>
+      <p>맞는 코드를 작성한 것 같음에도 색상의 변경이 일어나지않아 헤더에 들어간 요소들 중에 문제가 
+        있거나 스스로가 알지 못하는 잘못된 코드가 있는게 아닌가하는 혼란스러움이 생김. </p><br>
+        <h3>높이값을 변수로 잡는 JavaScript식 사용</h3>
+      <p>다양한 방식을 시도해보다가 화면에 구현되는데에는 문제가 없다는 사실을 알게되었고, 맞는 식을 찾게 됨.</p>
+    </section>
+  
+    <section class="review">
+      <h1>Review</h1>
+    </section>
+    <section class="review_next">
+      <p class="first">계속 배워나가는 단게이고, 부족한 점도 많아 고민의 과정이 많았습니다. <br>
+        하지만 포트폴리오 작업을 해나가면서 조금 더 수월하게 HTML, CSS 작업을 할 수 있게 되고, JavaScript에 대한 이해도 더 생기는 것을 느꼈습니다. <br>
+        어떤 부분들이 부족한지를 더 잘 알게되었고, 그 부분들을 메우기 위해 더 노력해나가야겠습니다.
+        </p>
+    </section>      
+
+  </main>
+
+  <div class="before"><a href="../index.html">← 이전</a></div>
+
+</body>
+</html>

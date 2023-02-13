@@ -1,16 +1,31 @@
-$(function(){
-  // 스크롤 시 header fade-in
-  $(document).on('scroll', function(){
-      if($(window).scrollTop() > 100){
-          $("#header").removeClass("deactive");
-          $("#header").addClass("active");
-      }else{
-          $("#header").removeClass("active");
-          $("#header").addClass("deactive");
-      }
-  })
-
+/********************************************** */
+const header = document.querySelector("#header");
+const headerHeight = header.getBoundingClientRect().height;
+ 
+window.addEventListener("scroll", () => {
+      if (window.scrollY > headerHeight) {
+      header.setAttribute("style", "background: #fff;", "z-index: 9999999999;");
+   } else {
+      
+header.setAttribute("style", "background: transparent;");
+   }
 });
+/*********************************************************************/
+const h5 = document.querySelector('h5');
+    const text = '꾸준한 노력으로 성장해나가고 싶은 개발자 김경성의 프로젝트를 소개합니다.';
+
+    let i = 0;
+  
+    (function autoType() {
+      if (i < text.length) {
+        h5.textContent += text[i];
+        i++;
+      } else {
+        h5.textContent = "";
+        i = 0;
+      }
+      setTimeout(autoType, 100);
+    })();
 
 
 /***********************************************************/
