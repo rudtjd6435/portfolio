@@ -16,7 +16,7 @@ const h5 = document.querySelector('h5');
 
     let i = 0;
   
-    (function autoType() {
+    (function autoType() { 
       if (i < text.length) {
         h5.textContent += text[i];
         i++;

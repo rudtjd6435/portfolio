@@ -70,14 +70,6 @@ header .gnb_wrapper {
 
 
 /* 로고 */
-header h1 {
-  /* flex-item */
-  margin-right: auto; /* 플렉스 아이템 개별 정렬 */
-  margin-left: 40px;
-  margin-top: 10px;
-  width: 200px;
-  height: 40px;
-}
 
 header .header_container {
   display: flex;
